@@ -1,0 +1,90 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: "Poppins", serif;
+}
+/* navbar */
+.number{
+    transition: 0.4s;
+}
+.number:hover{
+    color: black;
+    transition: 0.4s;
+}
+/* heropart */
+.hero-img{
+    background-image: url(./Assets/banner-bg.png);
+    background-size: cover;
+    object-fit: cover;
+    background-repeat: no-repeat;
+}
+.hero-detail .heading{
+    font-family: "DM Sans", sans-serif;
+    font-size: 86px;
+    font-weight: 700;
+    letter-spacing: 3.5px;
+}
+button{
+    border-radius: 5px;
+    transition: 0.4s;
+}
+button:hover{
+    background-color: white;
+    color: black;
+    transition: 0.4s;
+}
+.call-bg .call-item{
+    border: 1px solid white;
+}
+.call-item{
+    transition: 0.4s;
+    cursor: pointer;
+}
+.call-item:hover{
+    transition: 0.4s;
+    background-color: #0BABD9;
+}
+.call-item a{
+    font-family: "DM Sans", sans-serif;
+}
+.call-title .title{
+    font-family: "DM Sans", sans-serif;
+}
+.main-section{
+    background-image: url(./Assets/services-bg.png);
+    background-size: cover;
+    object-fit: cover;
+    background-repeat: no-repeat;
+}
+/* about section */
+.about{
+    font-family: "DM Sans", sans-serif;
+}
+/* footer */
+.footer-left p a{
+    transition: 0.4s;
+}
+.footer-left p a:hover{
+    transition: 0.4s;
+    color: #63DAE0;
+}
+.footer-right form input::placeholder{
+    color: white;
+}
+.footer-right form .submit{
+    transition: 0.4s;
+}
+.footer-right form .submit:hover{
+    transition: 0.4s;
+    background-color: white;
+    color: black;
+}
+.footer-bottom p .made-name{
+    cursor: pointer;
+    transition: 0.4s;
+}
+.footer-bottom p .made-name:hover{
+    color: #070C0C;
+    transition: 0.4s;
+}
