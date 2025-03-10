@@ -74,22 +74,22 @@
   <body>
     <div class="bg">
       <!-- navbar -->
-      <div class="navbar text-white w-full h-[86px] bg-[#0BADDC] ps-[15px] pe-[25px] flex items-center justify-between">
+      <div class="navbar text-white w-full h-[86px] bg-[#0BADDC] ps-[15px] pe-[25px] flex md:flex-row flex-row-reverse items-center justify-between">
         <div class="icon text-3xl cursor-pointer">
           <i class="ri-menu-fill"></i>
         </div>
-        <div class="contact">
+        <div class="contact md:block hidden">
           <i class="ri-phone-fill flex items-center gap-[10px] text-[18px]"><p class="number text-[18px] cursor-pointer">Call : +01 1234567890</p></i>
         </div>
         <div class="logo">
           <img src="./Assets/logo.png" alt="" />
         </div>
-        <div class="email">
+        <div class="email md:block hidden">
           <p class="number flex items-center gap-[10px] text-[18px] cursor-pointer duration-[0.4s] hover:text-black">
             <img src="./Assets/mail-icon.png" alt="" />Demo@gmail.com
           </p>
         </div>
-        <div class="icon2 flex items-center gap-[28px]">
+        <div class="icon2 hidden md:flex items-center gap-[28px]">
           <img src="./Assets/user-icon.png" alt="" />
           <img src="./Assets/search-icon.png" alt="" />
         </div>
@@ -97,16 +97,16 @@
       <!-- navbar -->
 
       <!-- heropart -->
-      <div class="hero-img w-[100%] h-[70vh] bg-[url('./Assets/banner-bg.png')] bg-cover object-cover bg-no-repeat">
-        <div class="hero-detail text-white w-[100%] h-[100%] px-[205px] py-[112px]">
-          <h1 class="heading font-[700] text-[86px] tracking-[3.5px]">SWIMPOOL</h1>
-          <h1 class="text-[38px] font-bold">CLEAN COMPANY</h1>
+      <div class="hero-img w-[100%] h-auto bg-[url('./Assets/banner-bg.png')] bg-cover object-cover bg-no-repeat">
+        <div class="hero-detail text-white w-[100%] h-[100%] lg:px-[205px] sm:px-[50px] px-[20px] py-[112px]">
+          <h1 class="heading font-[700] sm:text-[86px] sm:text-[50px] text-[35px] tracking-[3.5px]">SWIMPOOL</h1>
+          <h1 class="sm:text-[38px] text-[28px] font-bold">CLEAN COMPANY</h1>
           <p class="pt-[10px]">
             It is a long established fact that a reader will be distracted by
             the readable c
           </p>
           <button
-            class="h-[53px] w-[200px] bg-[black] mt-[40px] text-[18px] rounded-[5px] duration-[0.4s] hover:bg-white hover:text-black"
+            class="h-[53px] sm:w-[200px] w-full bg-[black] mt-[40px] text-[18px] rounded-[5px] duration-[0.4s] hover:bg-white hover:text-black"
             style="border: none">
             READ MORE
           </button>
@@ -114,38 +114,38 @@
       </div>
       <!-- heropart -->
 
-      <div class="call-bg flex text-[white] justify-between gap-[23px] bg-[black] w-[100%] h-[auto] px-[205px] py-[20px]">
-        <div class="call-item w-[50%] h-[100%] flex px-[20px] py-[9.2px] border-[1px] border-[white] cursor-pointer duration-[0.4s] hover:bg-[#0BABD9]">
-          <div class="call-title h-[100%] w-[50%]">
-            <p class="title text-[20px] font-bold leading-[36px]">
+      <div class="call-bg flex md:flex-row flex-col text-[white] justify-between gap-[23px] bg-[black] w-[100%] h-[auto] lg:px-[205px] sm:px-[50px] px-[20px] py-[20px]">
+        <div class="call-item md:w-[50%] h-[100%] flex sm:flex-row flex-col px-[20px] py-[9.2px] border-[1px] border-[white] cursor-pointer duration-[0.4s] hover:bg-[#0BABD9]">
+          <div class="call-title h-[100%] md:w-[50%]">
+            <p class="title text-[20px] font-bold leading-[36px] sm:text-left text-center">
               CALL NOW <br />
               FOR CLEAN
             </p>
           </div>
-          <div class="call-no h-[72px] w-[50%] flex items-center justify-end">
+          <div class="call-no h-[72px] sm:w-[50%] w-full flex items-center sm:justify-end justify-center">
             <p class="title text-[20px] font-bold">+01 1234567890</p>
           </div>
         </div>
-        <div class="call-item w-[50%] h-[100%] p-[30.5px] border-[1px] border-[white] cursor-pointer duration-[0.4s] hover:bg-[#0BABD9]">
+        <div class="call-item md:w-[50%] h-[100%] p-[30.5px] border-[1px] border-[white] cursor-pointer duration-[0.4s] hover:bg-[#0BABD9]">
           <a
             href="#"
-            class="link flex justify-center items-center"
+            class="link flex justify-center items-center sm:text-left text-center"
             style="font-size: 20px; font-weight: 700">GET A QUOTE
           </a>
         </div>
       </div>
 
       <!-- main section -->
-      <div class="main-section w-[100%] h-[auto] px-[205px] py-[90px] bg-[url('./Assets/services-bg.png')] bg-cover object-cover bg-no-repeat">
+      <div class="main-section w-[100%] h-[auto] lg:px-[205px] sm:px-[50px] px-[20px] py-[90px] bg-[url('./Assets/services-bg.png')] bg-cover object-cover bg-no-repeat">
         <!-- service section -->
-        <div class="service">
+        <div class="service"> 
           <h1 class="text-[40px] text-[white] pl-[15px]">OUR SERVICES</h1>
           <div
-            class="service-item flex items-start justify-between gap-[10px] w-[100%] h-[auto] mt-[40px]">
-            <div class="service-img h-[100%] w-[34.5%]">
-              <img src="./Assets/img-1.png" class="w-[350px]" alt="" />
+            class="service-item flex md:flex-row flex-col items-start justify-between gap-[10px] w-[100%] h-[auto] mt-[40px]">
+            <div class="service-img h-[100%] md:w-[34.5%] w-full md:block flex justify-center">
+              <img src="./Assets/img-1.png" class="md:w-[350px] w-full h-full" alt="" />
             </div>
-            <div class="service-detail h-[100%] w-[67.7%] px-[30px] py-[60px] border-[1px]">
+            <div class="service-detail h-[100%] md:w-[67.7%] px-[30px] py-[60px] border-[1px]">
               <h2 class="text-[36px] font-[400] text-[white]">POOL DESIGN</h2>
               <p class="text-[white] text-[18px] pt-[53px] leading-[24px]">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
@@ -165,8 +165,8 @@
               </button>
             </div>
           </div>
-          <div class="service-item flex items-start justify-between gap-[10px] w-[100%] h-[auto] mt-[180px]">
-            <div class="service-detail h-[100%] w-[67.7%] px-[30px] py-[60px] border-[1px]">
+          <div class="service-item flex md:flex-row flex-col items-start justify-between gap-[10px] w-[100%] h-[auto] mt-[180px]">
+            <div class="service-detail h-[100%] md:w-[67.7%] px-[30px] py-[60px] border-[1px]">
               <h2 class="text-[36px] font-[400] text-[white]">REPAIR POOL</h2>
               <p class="text-[white] text-[18px] pt-[53px] leading-[24px]">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
@@ -185,17 +185,17 @@
                 READ MORE
               </button>
             </div>
-            <div class="service-img flex justify-end h-[100%] w-[34.5%]">
-              <img src="./Assets/img-2.png" class="w-[350px]" alt="" />
+            <div class="service-img flex justify-end h-[100%] md:w-[34.5%] w-full">
+              <img src="./Assets/img-2.png" class="md:w-[350px] w-full" alt="" />
             </div>
           </div>
           <div
-            class="service-item flex items-start justify-between gap-[10px] w-[100%] h-[auto] mt-[180px]">
-            <div class="service-img h-[100%] w-[34.5%]">
-              <img src="./Assets/img-3.png" class="w-[350px]" alt="" />
+            class="service-item flex md:flex-row flex-col items-start justify-between gap-[10px] w-[100%] h-[auto] mt-[180px]">
+            <div class="service-img h-[100%] md:w-[34.5%] w-full">
+              <img src="./Assets/img-3.png" class="md:w-[350px] w-full" alt="" />
             </div>
             <div
-              class="service-detail h-[100%] w-[67.7%] px-[30px] py-[60px] border-[1px]">
+              class="service-detail h-[100%] md:w-[67.7%] px-[30px] py-[60px] border-[1px]">
               <h2 class="text-[36px] font-[400] text-[white]">SWIMING</h2>
               <p class="text-[white] text-[18px] pt-[53px] leading-[24px]">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
@@ -215,7 +215,7 @@
               </button>
             </div>
           </div>
-        </div>
+        </div> 
         <!-- service section -->
 
         <!-- about section -->
@@ -243,11 +243,11 @@
       <!-- main section -->
 
       <!-- footer -->
-      <div class="footer-top w-[100%] h-[auto] bg-[#111111] px-[205px] py-[50px]">
-        <div class="footer-list w-[100%] h-[100%] flex justify-between items-center">
-          <div class="footer-left">
+      <div class="footer-top w-[100%] h-[auto] bg-[#111111] xl:px-[205px] lg:px-[100px] px-[20px] py-[50px]">
+        <div class="footer-list w-[100%] h-[100%] flex lg:flex-row flex-col gap-[30px] lg:justify-between justify-center items-center">
+          <div class="footer-left w-full">
             <img src="./Assets/footer-logo.png" alt="">
-            <p class="pt-[45px] flex gap-[28px]">
+            <p class="pt-[45px] flex sm:flex-row flex-col gap-[28px]">
               <a href="#" class="text-[white] duration-[0.4s] hover:text-[#63dae0]">HOME</a>
               <a href="#" class="text-[white] duration-[0.4s] hover:text-[#63dae0]">ABOUT</a>
               <a href="#" class="text-[white] duration-[0.4s] hover:text-[#63dae0]">SERVICES</a>
@@ -269,11 +269,11 @@
               </div>
             </div>
           </div>
-          <div class="footer-right">
+          <div class="footer-right w-full">
             <h1 class="text-[white] text-[24px] font-[700]">NEWSLETTER</h1>
             <form action="">
-              <input type="email" placeholder="Enter Your Email" style="outline: none;" class="h-[50px] w-[350px] text-[white] text-[18px] pl-[10px] border-[none] bg-[transparent] mt-[22px] border-[1.5px]"> <br>
-              <input type="submit" value="Sign Up" class="submit h-[55px] w-[350px] cursor-pointer text-[white] text-[18px] pl-[10px] border-[none] bg-[transparent] mt-[20px] border-[1.5px]">
+              <input type="email" placeholder="Enter Your Email" style="outline: none;" class="h-[50px] sm:w-[350px] w-full text-[white] text-[18px] pl-[10px] border-[none] bg-[transparent] mt-[22px] border-[1.5px]"> <br>
+              <input type="submit" value="Sign Up" class="submit h-[55px] sm:w-[350px] w-full cursor-pointer text-[white] text-[18px] pl-[10px] border-[none] bg-[transparent] mt-[20px] border-[1.5px]">
             </form>
           </div>
         </div>
